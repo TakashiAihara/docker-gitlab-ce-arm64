@@ -1,4 +1,3 @@
 #!/bin/bash
 
-echo wget -q "${DOWNLOAD_URL}" -O /tmp/gitlab.deb
 wget -q "${DOWNLOAD_URL}" -O /tmp/gitlab.deb
