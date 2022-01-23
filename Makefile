@@ -1,9 +1,9 @@
-export MAINTAINER:=ulm0
+export MAINTAINER:=TakashiAihara
 export NAME:=gitlab
 export IMAGE:=$(MAINTAINER)/$(NAME)
 export CE_VERSION:=$(shell ./ci/version)
 export CE_TAG:=$(CE_VERSION)
-export ARCHS:=ARMv6 or later
+export ARCHS:=ARMv8 or later
 
 # ifeq ($(CI_COMMIT_REF_NAME), "master")
 # 	export CE_TAG=$(CE_VERSION)

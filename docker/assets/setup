@@ -11,6 +11,8 @@ dpkg -i /tmp/gitlab.deb
 rm -f /tmp/gitlab.deb
 rm -rf /var/lib/apt/lists/*
 
+unset DOWNLOAD_URL
+
 # Create sshd daemon
 mkdir -p /opt/gitlab/sv/sshd/supervise /opt/gitlab/sv/sshd/log/supervise
 mkfifo /opt/gitlab/sv/sshd/supervise/ok /opt/gitlab/sv/sshd/log/supervise/ok
